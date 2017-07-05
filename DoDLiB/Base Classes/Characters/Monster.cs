@@ -28,7 +28,7 @@ namespace DoD
             player.Backpack.Add(this);
             return $"{this.Name} was added to backpack";
         }
-
+        
         public override string ToString()
         {
             return Name;

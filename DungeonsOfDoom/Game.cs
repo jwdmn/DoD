@@ -26,7 +26,6 @@ namespace DungeonsOfDoom
             TextUtils.Animate("Get ready to face the horrors of Dungeons of Doom..");
             Console.ReadKey(true);
 
-
             do
             {
                 Console.Clear();

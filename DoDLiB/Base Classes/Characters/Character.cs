@@ -30,6 +30,11 @@ namespace DoD
             Name = name;
         }
 
+        /// <summary>
+        /// Default method on what happends when this character fights another character
+        /// </summary>
+        /// <param name="opponent">The character that this character is fighting</param>
+        /// <returns></returns>
         public virtual string Attack(Character opponent)
         {
             opponent.Health -= this.AttackDamage;

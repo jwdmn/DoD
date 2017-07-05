@@ -6,10 +6,23 @@ using System.Threading.Tasks;
 
 namespace DungeonsOfDoom
 {
-    class Monster : Character
+    class Monster : Character, IPickupAble
     {
-        public Monster(int health, int attackDamage) :base(health, attackDamage, 'M')
+
+        public Monster(int health, int attackDamage, string name) :base(health, attackDamage, 'M', name)
         {
+            MonsterCount++;
+        }
+
+        public string ItemGetPickedUp(Player player)
+        {
+            player.Backpack.Add(this);
+            return $"{this.Name} was added to backpack";
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

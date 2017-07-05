@@ -14,5 +14,11 @@ namespace DungeonsOfDoom
         {
             AddDamage = addDamage;
         }
+
+        public override string GetPickedUp(Player player)
+        {
+            player.AttackDamage += this.AddDamage;
+            return $"{player.Name} picked up {this.Name}. Attack power increased by {this.AddDamage}.";
+        }
     }
 }

@@ -9,6 +9,7 @@ namespace DungeonsOfDoom
     abstract class WorldItem
     {
         public char Symbol { get; }
+        public static int MonsterCount { get; set; }
 
         public WorldItem(char symbol)
         {

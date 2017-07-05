@@ -6,14 +6,28 @@ using System.Threading.Tasks;
 
 namespace DungeonsOfDoom
 {
-    abstract class Item : WorldItem
+    abstract class Item : WorldItem, IPickupAble
     {
-        //glöm inte mickes fannybag
-        public string Name { get; set; }
+        
+        public string Name { get; }
 
         public Item(string name) : base('I')
         {
             Name = name;
         }
+
+        public abstract string GetPickedUp(Player player);
+
+        public string ItemGetPickedUp(Player player)
+        {
+            player.Backpack.Add(this);
+            return $"{this.Name} was added to backpack";
+        }
+
+        public override string ToString()
+        {
+            return Name;
+        }
+
     }
 }

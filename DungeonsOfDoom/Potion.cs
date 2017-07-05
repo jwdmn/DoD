@@ -14,5 +14,11 @@ namespace DungeonsOfDoom
         {
             Healing = healing;
         }
+
+        public override string GetPickedUp(Player player)
+        {
+            player.Health += this.Healing;
+            return $"{player.Name} picked up {this.Name}. Health increased by {this.Healing}.";
+        }
     }
 }

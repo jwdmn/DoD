@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    abstract class WorldItem
+    public abstract class WorldItem
     {
         public char Symbol { get; }
         public static int MonsterCount { get; set; }

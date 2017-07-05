@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    interface IPickupAble
+    public interface IAbleToPickup
     {
-        string ItemGetPickedUp(Player player);
+        List<IPickupAble> Backpack { get; set; }
     }
 }

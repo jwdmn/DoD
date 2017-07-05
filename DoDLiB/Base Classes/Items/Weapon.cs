@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    class Weapon : Item
+    public class Weapon : Item
     {
         public int AddDamage { get; set; }
 

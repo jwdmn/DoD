@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    class Ogre : Monster
+    public interface IPickupAble
     {
-        public Ogre() : base(20, 3, "Ogre")
-        {
-
-        }
+        string ItemGetPickedUp(Player player);
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    class Player : Character, IAbleToPickup
+    public class Player : Character, IAbleToPickup
     {
         public int X { get; set; }
         public int Y { get; set; }

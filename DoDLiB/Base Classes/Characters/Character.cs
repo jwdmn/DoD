@@ -4,14 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    abstract class Character : WorldItem
+    /// <summary>
+    /// Represents a character in the game. 
+    /// A character has Health, AttackDamage and a Name
+    /// </summary>
+    public abstract class Character : WorldItem
     {
         public int Health { get; set; }
         public int AttackDamage { get; set; }
         public string Name { get; set; }
 
+        /// <summary>
+        /// Represents a character in the game
+        /// </summary>
+        /// <param name="health">the characters health points</param>
+        /// <param name="attackDamage">the characters attack damage</param>
+        /// <param name="symbol">the characters symbol shown on the world map</param>
+        /// <param name="name">the characters name</param>
         public Character(int health, int attackDamage, char symbol, string name) : base(symbol)
         {
             Health = health;

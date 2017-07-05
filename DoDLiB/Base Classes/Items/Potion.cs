@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    class Potion : Item
+    public class Potion : Item
     {
         public int Healing { get; set; }
 

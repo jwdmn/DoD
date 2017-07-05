@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    interface IAbleToPickup
+    public class Ogre : Monster
     {
-        List<IPickupAble> Backpack { get; set; }
+        public Ogre() : base(20, 3, "Ogre")
+        {
+
+        }
     }
 }

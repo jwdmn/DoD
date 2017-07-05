@@ -1,0 +1,5 @@
+C:\projects\DoD\Utils\bin\Debug\Utils.dll
+C:\projects\DoD\Utils\bin\Debug\Utils.pdb
+C:\projects\DoD\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
+C:\projects\DoD\Utils\obj\Debug\Utils.dll
+C:\projects\DoD\Utils\obj\Debug\Utils.pdb

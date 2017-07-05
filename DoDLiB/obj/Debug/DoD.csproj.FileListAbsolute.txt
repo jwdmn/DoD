@@ -1,0 +1,4 @@
+C:\projects\DoD\DoDLiB\obj\Debug\DoDLiB.dll
+C:\projects\DoD\DoDLiB\obj\Debug\DoDLiB.pdb
+C:\projects\DoD\DoDLiB\bin\Debug\DoDLiB.dll
+C:\projects\DoD\DoDLiB\bin\Debug\DoDLiB.pdb

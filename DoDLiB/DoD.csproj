@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C25B30D-B418-4DFD-9539-EA058771BBFE}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>DungeonsOfDoom</RootNamespace>
-    <AssemblyName>DungeonsOfDoom</AssemblyName>
+    <ProjectGuid>{22269F16-569D-4E99-9DBA-32B824513013}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoDLiB</RootNamespace>
+    <AssemblyName>DoDLiB</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,25 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Base Classes\Characters\Character.cs" />
+    <Compile Include="Base Classes\Characters\Monster.cs" />
+    <Compile Include="Base Classes\Characters\Ogre.cs" />
+    <Compile Include="Base Classes\Characters\Orc.cs" />
+    <Compile Include="Base Classes\Characters\Player.cs" />
+    <Compile Include="Base Classes\Items\Item.cs" />
+    <Compile Include="Base Classes\Items\Potion.cs" />
+    <Compile Include="Base Classes\Items\Weapon.cs" />
+    <Compile Include="Base Classes\Room\Room.cs" />
+    <Compile Include="Base Classes\WorldItem.cs" />
+    <Compile Include="Interfaces\IAbleToPickup.cs" />
+    <Compile Include="Interfaces\IPickupAble.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="TextFile1.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DoDLiB\DoD.csproj">
-      <Project>{22269f16-569d-4e99-9dba-32b824513013}</Project>
-      <Name>DoD</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Utils\Utils.csproj">
-      <Project>{d39678e1-cae0-46df-bdc4-06a0bb8d67e0}</Project>
-      <Name>Utils</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

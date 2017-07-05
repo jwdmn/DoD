@@ -4,15 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    class Monster : Character, IPickupAble
+    public abstract class Item : WorldItem, IPickupAble
     {
+        
+        public string Name { get; }
 
-        public Monster(int health, int attackDamage, string name) :base(health, attackDamage, 'M', name)
+        public Item(string name) : base('I')
         {
-            MonsterCount++;
+            Name = name;
         }
+
+        public abstract string GetPickedUp(Player player);
 
         public string ItemGetPickedUp(Player player)
         {
@@ -24,5 +28,6 @@ namespace DungeonsOfDoom
         {
             return Name;
         }
+
     }
 }

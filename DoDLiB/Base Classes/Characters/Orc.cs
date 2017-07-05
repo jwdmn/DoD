@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    class Orc : Monster
+    public class Orc : Monster
     {
         public Orc() : base(10, 3, "Orc")
         {
